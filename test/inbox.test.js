@@ -3,7 +3,7 @@ const ganache = require('ganache');
 const { Web3 } = require('web3');
 
 const { abi, bytecode } = require('../build/Inbox.json');
-const web3 = new Web3(ganache.provider());
+const web3 = new Web3('http://localhost:8545');
 
 let accounts = [];
 let contract = null;
@@ -29,8 +29,10 @@ beforeEach(async () => {
 });
 
 describe('Inbox', () => {
-  it('deploys a contract', () => {
+  it('deploys a contract', async() => {
     assert.ok(contract.options.address);
+
+    const message = await contract.methods.message().call();
   });
 
   it ('has a default message', async () => {

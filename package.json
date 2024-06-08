@@ -10,18 +10,21 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/assert": "^1.5.10",
     "fs-extra": "^11.2.0",
     "ganache": "^7.9.2",
-    "global": "^4.4.0",
-    "solc": "^0.8.26",
-    "truffle": "^5.11.5",
+    "solc": "^0.8.24",
     "web3": "^4.9.0"
   },
   "devDependencies": {
-    "mocha": "^10.4.0"
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.14.2",
+    "hardhat": "^2.22.5",
+    "mocha": "^10.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
   },
   "directories": {
     "test": "test"
-  },
-  "description": ""
+  }
 }
