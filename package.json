@@ -1,0 +1,27 @@
+{
+  "name": "inbox-contract",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run compile && npm run mocha",
+    "mocha": "mocha",
+    "compile": "node compile.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "ganache": "^7.9.2",
+    "global": "^4.4.0",
+    "solc": "^0.8.26",
+    "truffle": "^5.11.5",
+    "web3": "^4.9.0"
+  },
+  "devDependencies": {
+    "mocha": "^10.4.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "description": ""
+}
